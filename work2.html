@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .header {
+      width: 100%;
+      height: 15%;
+      background: yellow;
+
+    }
+
+    .nav {
+      width: 15%;
+      height: 70%;
+      float: left;
+      background: orange;
+
+    }
+
+    .section {
+      width: 70%;
+      height: 70%;
+      float: left;
+      background: olivedrab;
+
+    }
+
+    .aside {
+      width: 15%;
+      height: 70%;
+      float: left;
+      background: orange;
+    }
+
+    .footer {
+      width: 100%;
+      height: 70%;
+      float: left;
+      background: plum;
+    }
+  </style>
+
+
+<link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
+</head>
+
+
+
+
+
+
+<body>
+  <form>
+    <input type="text" name="text" value="text"><br>
+    <input type="password" name="password" value="password"><br>
+    <input type="file" name="file" value="file"><br>
+    <input type="checkbox" name="checkbox" value="checkbox"><br>
+    <input type="radio" name="radio" value="radio"><br>
+    <input type="hidden" name="hidden" value="hidden"><br>
+
+    <input type="button" value="button"><br>
+    <input type="reset" value="reset"><br>
+    <input type="submit" value="submit"><br>
+    <input type="image" src="https://via.placeholder.com/100x100"><br>
+  </form>
+
+
+
+  <form>
+    <fieldset>
+      <legend>입력양식</legend>
+
+      <table>
+        <tr>
+          <td><label for="username">이름</label></td>
+          <td><input id="username" type="text" name="username"></td>
+        </tr>
+
+        </label></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+  <select multiple="multiple">
+    <option>김밥</option>
+    <option>떡</option>
+    <option>라면</option>
+    <option>나물</option>
+
+  </select>
+
+  <select>
+    <optgroup label="html:">
+      <option>김밥</option>
+      <option>떡</option>
+      <option>라면</option>
+      <option>나물</option>
+    </optgroup>
+    <optgroup label="html:555555">
+      <option>김밥555</option>
+      <option>떡55</option>
+      <option>라면55</option>
+      <option>나물55</option>
+    </optgroup>
+  </select>
+
+
+  <h1> 로그인</h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>Login</legend>
+      <table>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td><input id="username" type="text" name="username"></td>
+          <td><label for="password">Password</label></td>
+          <td><input id="password" type="password" name="password"></td>
+        </tr>
+        </label></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+
+  <h1>도형 서식 폼 </h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>도형 서식 입력</legend>
+      <label>선종류<select size="3">
+          <option>선 없음</option>
+          <option>실선</option>
+          <option>점선</option>
+        </select>
+
+      </label>
+      <label>선두께 <input type="number" min="1" max="50" step="1"></label>
+      <label>선색 <input type="color" value="#00bfff"></label><br><br>
+      <label>투명도(0~100) : <input type="range" list="transparency" min="0" max="100">
+        <datalist id="transparency">
+          <option value="0" label="투명">
+          <option value="50" label="중간">
+          <option value="100" label="불투명">
+        </datalist>
+
+
+    </fieldset>
+  </form>
+
+
+  <h1>버튼</h1>
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th><input type="button" value="1"></th>
+        <th><input type="button" value="2"></th>
+        <th><input type="button" value="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="button" value="4"></td>
+        <td><input type="button" value="5"></td>
+        <td><input type="button" value="6"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7"></td>
+        <td><input type="button" value="8"></td>
+        <td><input type="button" value="9"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="main-header">
+    <header id="main-header"> </header>
+    <nav id="nav">
+      <ul>
+        <li>aa</li>
+        <li>aa</li>
+        <li>aa</li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id="sec"></section>
+      <aside id="'main-aside">
+
+      </aside>
+    </div>
+    <footer id="footer"></footer>
+
+  </div>
+
+
+  <body>
+    <header class="header">header</header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+
+      </ul>
+    </nav>
+    <section class="section">section
+      <article>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam nblandit leo,</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam nunc, scelerisque varius dolor a,
+        scelerisque gravida orci. Aliquam consequat rhoncus tortor posuere dictum. Praesent et sapien a risus vestibulum
+        vulputate. Etiam pellentesque felis sit amet elit varius malesuada. In ac ex et diam finibus pretium in sit amet
+        nunc. Mauris nec gravida tellus. Nullam accumsan lacus dolor, nec ultricies ante finibus in.
+      </article>
+
+      <article>
+        <h1>Etiam placerat, lorem vel faucibus tristique, magna lacus blandit leo,</h1>
+       <p>Etiam placerat, lorem vel faucibus tristique, magna lacus blandit leo, ac vestibulum risus ante dapibus magna.
+        Quisque vehicula turpis in quam laoreet mattis. Donec pulvinar, justo ac sodales maximus, urna augue elementum
+        ipsum, ac consequat ligula odio a libero. Nunc convallis consectetur diam. Praesent commodo erat ac gravida
+        porta. Pellentesque sed ultrices libero. Nullam at eleifend dui. Donec id sem placerat, porta mi vel, ultricies
+        nunc. Vivamus eu sem lorem. In ultricies risus ullamcorper, mattis velit id, porta lorem. In dolor urna, aliquet
+        ac urna ac, tempus suscipit erat. Aenean luctus facilisis odio eu lacinia. Sed rhoncus maximus orci vel
+        hendrerit. Vestibulum dignissim nisi eu volutpat scelerisque</p>
+      </article>
+    </section>
+    <aside class="aside">aside</aside>
+    <footer class="footer">footer</footer>
+
+
+
+    <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="MY_VIDEO.mp4" type="video/mp4" />
+    <source src="MY_VIDEO.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+
+
+  </body>
+
+</html>
