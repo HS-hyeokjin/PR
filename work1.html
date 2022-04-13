@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제목</title>
 </head>
+
 <body>
 
     <h3> 제목글자 </h3>
-    <h4> 시간복잡도란? 
+    <h4> 시간복잡도란?
         - 수행되는 기본 연산의 개수
         - 기계(컴퓨터)에서 각 기본 연산의 수행에 걸리는 시간은 다 비슷
         - 대부분의 컴퓨터에서 제공하는 기본연산들도 다 거기서 거기
         - 알고리즘(혹은 코드, 프로그램)의 수행시간은 수행되는 기본연산의 개수에 비례할 것
-        
+
         시간 복잡도 분석
         • 주어진 알고리즘의 시간 복잡도
         • n에 대한 함수 f(n)이지만 그때 그때 달라요
         • If문 등 분기가 많아지면 f(n)을 정확히 알아내기 어려움
         • 그래서 근사화 혹은 단순화된 경우들에 대해 분석
-        • Best-Case Analysis       (최상)
-        • Worst-Case Analysis     (최악)
-        • Average-Case Analysis  (평균)
-        
+        • Best-Case Analysis (최상)
+        • Worst-Case Analysis (최악)
+        • Average-Case Analysis (평균)
+
         빅오 표기법
         • 두 함수 간의 관계를 나타내는 표기법
         • 시간복잡도의 개념과는 별개로
@@ -34,103 +36,153 @@
         • 함수 f의 증가속도가 g보다 느리지 않다 (즉 비슷하거나 빠르다)
         • f(n) = Θ(g(n))
         • 함수 f의 증가속도가 g와 비슷하다
-        
+
         알고리즘 내에서 간단하게 Big-O 계산하기
         사실 일일이 primitive operation을 세는 것은 의미가 없다.
         루프 밖에 있는 단순 연산들은 결국 상수항이라 제외되고,
         루프 안에 여러 개의 연산이 있다고 하더라도 가장 큰 차수 외에는 각 항의 계수를 포함한 모든 것들이 무시되기 때문에
         루프와 recursion 횟수만 확인하면 된다.
         가령 n에 관련된 for loop가 두 번 있다면 n에 대한 1차식 두 개를 곱하므로,
-        연산의 개수에 대한 식은 n에 대한 2차식이 되고, 이는 O(n^2)이다. 
-        결국 알고리즘 내에서 Big-O notation은 루프의 차수(깊이)와 직결된다고 볼 수 있다. 
+        연산의 개수에 대한 식은 n에 대한 2차식이 되고, 이는 O(n^2)이다.
+        결국 알고리즘 내에서 Big-O notation은 루프의 차수(깊이)와 직결된다고 볼 수 있다.
         즉, n에 대한 loop가 1개라면 O(n), 두 개라면 O(n^2)이라고 할 수 있다.
-        
+
         Reduction
         최솟값문제를 정렬 문제로 바꾼걸 리덕션이라 함
         배열 A[..] 에서 최솟값 찾기
         1. A를 정렬한다.
         2. returnA[0]
-        
-        
-        
+
+
+
         정렬
         삽입(O(n2)) :
         선택(O(n2)) : 최소값을 찾아 첫번째 위치에 놓고 나머지 다시 찾아 두번째 위치에 놓음
         버블(O(n2))
-        쉘   (평균O(n1.5) 최악 O(n2)) : 
+        쉘 (평균O(n1.5) 최악 O(n2)) :
         퀵
         힙
-        합병(O(nlog2n)  : 이미 정렬되어 있는 두개의 파일을 하나로 합병한다 
+        합병(O(nlog2n) : 이미 정렬되어 있는 두개의 파일을 하나로 합병한다
         기수
-        
+
         선택정렬의 시간 복잡도는 O(n2
         )이라는데
         그러면 mergesort보다 느린 거지..
         Mergesort는 O(n log n)이니까.. </h4>
 
 
-    <li><a href = "#Alpha">알파</a></li>
-    <li><a href = "#Beta">베타</a></li>
-    <li><a href = "#Gama">감마</a></li>
+    <li><a href="#Alpha">알파</a></li>
+    <li><a href="#Beta">베타</a></li>
+    <li><a href="#Gama">감마</a></li>
 
-    <h1 id = "Alpha">Alpha</h1> 
-    <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-         Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.</small> <sub>Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-          Ut tincidunt lectus quis nibh sollicitudin mattis.. </sub>Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-          Sed ornare condimentum leo vel volutpat. Vivam<b>us facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-           Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, </b> purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-           Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-            Ut tincidunt lectus quis nibh sollicitudin mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-             <b>Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-              Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-              Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-               Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-               Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-                Ut tincidunt lectus quis nibh sollicitudin mattis.</b>
+    <h1 id="Alpha">Alpha</h1>
+    <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus
+            rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed
+            nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat
+            dolor.</small> <sub>Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. </sub>Donec ultrices, lacus ut pretium gravida, risus
+        purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+        Sed ornare condimentum leo vel volutpat. Vivam<b>us facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, </b> purus
+        tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+        Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+        Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+        Ut tincidunt lectus quis nibh sollicitudin mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce finibus metus mauris, eu vehicula risus rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit.
+        . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec
+        leo id nisi vehicula tincidunt.
+        <b>Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus
+            tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus
+            tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.</b>
     </p>
-    <h1 id = "Beta">Beta</h1> 
-    <p><ins>In commodo diam non auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-        Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor  auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-        Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-         Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit efficitur dui. 
-       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu, rhonc auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-       Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-        Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit efficitur dui. 
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu, rhonc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-       Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-        Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-        Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-         Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-         Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-          Ut tincidunt lectus quis nibh sollicitudin mattis. </ins></p>
-    <h1 id = "Gama">#Gama</h1> 
-    <p><del>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu, rhoncus eget mi at, sagittis scelerisque urna. Pellentesque maximus sem tempor dictum feugiat.
-        efficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem</del>
+    <h1 id="Beta">Beta</h1>
+    <p><ins>In commodo diam non auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero,
+            ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor auctor accumsan. Donec ultrices, lacus ut
+            pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula
+            tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit
+            efficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu,
+            rhonc auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus
+            elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit
+            efficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu,
+            rhonc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus
+            rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            . Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed
+            nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus
+            tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis.. Donec ultrices, lacus ut pretium gravida, risus purus
+            tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+            Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+            Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+            Ut tincidunt lectus quis nibh sollicitudin mattis. </ins></p>
+    <h1 id="Gama">#Gama</h1>
+    <p><del>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu,
+            rhoncus eget mi at, sagittis scelerisque urna. Pellentesque maximus sem tempor dictum feugiat.
+            efficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis loremefficitur
+            dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+            loremefficitur dui.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem</del>
     </p>
 
 
 
     <h1> 제목글자</h1>
     <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus rhoncus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         In commodo diam non auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt. 
-         Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor. Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
-          Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit efficitur dui. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu, rhoncus eget mi at, sagittis scelerisque urna. Pellentesque maximus sem tempor dictum feugiat.
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus metus mauris, eu vehicula risus rhoncus
+        eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In commodo diam non auctor accumsan. Donec ultrices, lacus ut pretium gravida, risus purus tristique libero, ut
+        tempus elit dolor eu lacus. Sed nec leo id nisi vehicula tincidunt.
+        Sed ornare condimentum leo vel volutpat. Vivamus facilisis ultrices dui cursus congue. Nullam et erat dolor.
+        Vivamus accumsan libero nec felis convallis, eu maximus dolor hendrerit.
+        Ut tincidunt lectus quis nibh sollicitudin mattis. Vivamus ante orci, vehicula nec risus nec, blandit efficitur
+        dui.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lorem arcu,
+        rhoncus eget mi at, sagittis scelerisque urna. Pellentesque maximus sem tempor dictum feugiat.
     </p>
     <h1> 홍차</h1>
     <hr>
@@ -139,7 +191,7 @@
     <br>
     <h2> 등급</h2>
     <p> 홍차는 ~~~</p>
-    <p>-브로큰 페코</p>    
+    <p>-브로큰 페코</p>
     <p>-브로큰 페코 수숑</p>
     <p>- 브로큰 오렌지 ~~</p>
 
@@ -158,24 +210,24 @@
     <li>
         <b>CSS3</b>
         <ul>
-        <ul>
-        <li>Anima</li>
-        <li>3D</li>
-        </ul>
+            <ul>
+                <li>Anima</li>
+                <li>3D</li>
+            </ul>
         </ul>
     </li>
 
     <table border="1">
         <thread>
-        <tr>
-            <th></th>
-            <th>월</th>
-            <th>화</th>
-            <th>수</th>
-            <th>목</th>
-            <th>금</th>
-        </tr>
-    </thread>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thread>
         <tr>
             <th>1교시</th>
             <th>영어</th>
@@ -183,7 +235,7 @@
             <th>과확</th>
             <th>사회</th>
             <th>국어</th>
-        </tr>        
+        </tr>
         <tr>
             <th>2교시</th>
             <th>영어</th>
@@ -196,79 +248,79 @@
 
     <table border="1">
         <colgroup>
-            <col span="1" style = "background-color: beige">
-            <col span="6" style = "background-color:rgb(136, 149, 150)">
+            <col span="1" style="background-color: beige">
+            <col span="6" style="background-color:rgb(136, 149, 150)">
         </colgroup>
-    
-        <thead style ="background-color:beige">
-        <tr>
-            <th></th>
-            <th>월</th>
-            <th>화</th>
-            <th>수</th>
-            <th>목</th>
-            <th>금</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>1교시</th>
-            <td></td>
-            <td rowspan="3" style="background-color: rgb(131, 54, 54)">기업용<br>소프트웨어</th>
-            <td rowspan="3" style="background-color: rgb(84, 112, 81)">캡스톤</th>
-            <td></td>
-            <td rowspan="3" style="background-color: rgb(48, 97, 59)">알고리듬</th>
-        </tr>        
-        <tr>
-            <th>2교시</th>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>3교시</th>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>4교시</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>5교시</th>
-            <th></th>
-            <td rowspan="3" style="background-color: rgb(116, 88, 88)">인공지능</td>
-            <td rowspan="3" style="background-color: rgb(134, 139, 158)">웹프로그래밍</td>
-            <td></td>
-            <td rowspan="3" style="background-color: rgb(47, 54, 73)">멀티미디어<br>처리 기술</td>
-        </tr>
-        <tr>
-            <th>6교시</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>7교시</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>8교시</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </tbody>
+
+        <thead style="background-color:beige">
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1교시</th>
+                <td></td>
+                <td rowspan="3" style="background-color: rgb(131, 54, 54)">기업용<br>소프트웨어</th>
+                <td rowspan="3" style="background-color: rgb(84, 112, 81)">캡스톤</th>
+                <td></td>
+                <td rowspan="3" style="background-color: rgb(48, 97, 59)">알고리듬</th>
+            </tr>
+            <tr>
+                <th>2교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>3교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>4교시</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>5교시</th>
+                <th></th>
+                <td rowspan="3" style="background-color: rgb(116, 88, 88)">인공지능</td>
+                <td rowspan="3" style="background-color: rgb(134, 139, 158)">웹프로그래밍</td>
+                <td></td>
+                <td rowspan="3" style="background-color: rgb(47, 54, 73)">멀티미디어<br>처리 기술</td>
+            </tr>
+            <tr>
+                <th>6교시</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>7교시</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>8교시</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
     </table>
 
     <table border="1">
         <colgroup>
-        <col span="1" style="background-color : aqua" />
+            <col span="1" style="background-color : aqua" />
         </colgroup>
         <tr>
             <th colspan="2">지역별 홍차</th>
@@ -276,16 +328,26 @@
         <tr>
             <th rowspan="3">중국</th>
             <td>정산소종</td>
-        </tr>        
-            <tr><td>기문</td></tr>
-            <tr><td>운남</td></tr>
-            <tr>
-                <th rowspan="4">인도및 스리랑카</th>
-                <td>아삼</td>
-            </tr>        
-            <tr><td>기문</td></tr>
-            <tr><td>기문</td></tr>
-            <tr><td>운남</td></tr>
+        </tr>
+        <tr>
+            <td>기문</td>
+        </tr>
+        <tr>
+            <td>운남</td>
+        </tr>
+        <tr>
+            <th rowspan="4">인도및 스리랑카</th>
+            <td>아삼</td>
+        </tr>
+        <tr>
+            <td>기문</td>
+        </tr>
+        <tr>
+            <td>기문</td>
+        </tr>
+        <tr>
+            <td>운남</td>
+        </tr>
     </table>
 
     <ul>
@@ -304,65 +366,66 @@
         </ol>
     </ul>
     <table border="1">
-		<tr>
-			<th colspan="6">한국의 차</th>
-		</tr>
-		<tr>
-			<th rowspan="6">뿌리차</th>
-			<td>인삼차</td>
-			<th rowspan="9">과일차</th>
-			<td>수정과</td>
-			<th rowspan="5">잎차</th>
-			<td>뽕잎차</td>
-		</tr>
-		<tr>
-			<td>당귀차</td>
-			<td>유자차</td>
-			<td>감잎차</td>
-		</tr>
-		<tr>
-			<td>생강차</td>
-			<td>구기자차</td>
-			<td>솔잎차</td>
-		</tr>
-		<tr>
-			<td>칡차</td>
-			<td>대추차</td>
-			<td>국화차</td>
-		</tr>
-		<tr>
-			<td>둥굴레차</td>
-			<td>오미자차</td>
-			<td>이슬차</td>
-		</tr>
-		<tr>
-			<td>마차</td>
-			<td>매실차</td>
-			<th rowspan="4">기타</th>
-			<td>두충차</td>
-		</tr>
-		<tr>
-			<th rowspan="3">곡물차</th>
-			<td>보리차</td>
-			<td>모과차</td>
-			<td>영지버섯차</td>
-		</tr>
-		<tr>
-			<td>옥수수차</td>
-			<td>산수유차</td>
-			<td>귤강차</td>
-		</tr>
-		<tr>
-			<td>현미차</td>
-			<td>탱자차</td>
-			<td>쌍화차</td>
-		</tr>
-	</table>
-    
-<audio src="chapter_3/Kalimba.mp3" controls="controls"></audio>
-<audio src="chapter_3/Kalimba.ogg" controls="controls"></audio>
-<video controls="controls">
-    <source src="chapter_3/Wildlife.mp4" type="video/mp4" poster="https://via.placeholder.com/640x360">
-</video>
+        <tr>
+            <th colspan="6">한국의 차</th>
+        </tr>
+        <tr>
+            <th rowspan="6">뿌리차</th>
+            <td>인삼차</td>
+            <th rowspan="9">과일차</th>
+            <td>수정과</td>
+            <th rowspan="5">잎차</th>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유자차</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥굴레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+        <tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <th rowspan="4">기타</th>
+            <td>두충차</td>
+        </tr>
+        <tr>
+            <th rowspan="3">곡물차</th>
+            <td>보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+        </tr>
+        <tr>
+            <td>옥수수차</td>
+            <td>산수유차</td>
+            <td>귤강차</td>
+        </tr>
+        <tr>
+            <td>현미차</td>
+            <td>탱자차</td>
+            <td>쌍화차</td>
+        </tr>
+    </table>
+
+    <audio src="chapter_3/Kalimba.mp3" controls="controls"></audio>
+    <audio src="chapter_3/Kalimba.ogg" controls="controls"></audio>
+    <video controls="controls">
+        <source src="chapter_3/Wildlife.mp4" type="video/mp4" poster="https://via.placeholder.com/640x360">
+    </video>
 </body>
+
 </html>
