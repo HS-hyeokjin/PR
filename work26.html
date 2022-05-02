@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>animation</title>
+    <style>
+    @keyframes imagerotation {
+    from { transform : rotate(0deg);}
+    to { transform : rotate(360deg); }
+    }
+    @keyframes textcolor {
+        0% { color: blue;}
+    40% { color: green;}
+    100% { color: red;}
+
+    }
+    #tran {
+    animation-name : imagerotation;
+    animation-duration :5s;
+    animation-iteration-count : infinite;
+    }
+    span{
+    animation-name: textcolor;
+    animation-duration :5s;
+    animation-iteration-count : infinite;
+    }
+    </style>
+    </head>
+    <body><h3>어지러워요</h3><hr>
+    <img id="tran" src="spongebob.png" width="100" height="100"
+    alt="animation">
+    <span>어지러워요</span>
+    </body></html>
