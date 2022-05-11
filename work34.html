@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 500px;
+            margin: 100px auto;
+        }
+        #container {
+            width: 345px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+        }
+        #container2 {
+          
+            background: orange;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -125px;
+        }
+        .circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50%;
+        }
+        #red {
+        background: red;
+        left: 20px;
+        top: 20px;
+      }
+      #green {
+        background: green;
+        right: 20px;
+        top: 20px;
+      }
+      #blue {
+        background: blue;
+        right: 20px;
+        bottom: 20px;
+      }
+      #yellow {
+        background: yellow;
+        left: 20px;
+        bottom: 20px;
+      }
+        #top {
+            background: green;
+        }
+        #middle {
+            overflow: hidden;
+        }
+
+        #left {
+            float: left;
+            width: 150px;
+            background: red;
+        }
+
+        #right {
+            float: right;
+            width: 350px;
+            background: blue;
+        }
+
+        #bottom {
+            background: purple;
+        }
+        .top_bar {
+        background: red;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 50px;
+      }
+      .left_bar {
+        background: blue;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+        width: 50px;
+      }
+        .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+
+</head>
+
+<body>
+  <div class="top_bar"></div>
+  <div class="left_bar"></div>
+    <div id="top">    
+      <div id="container2">
+      <h4 class="ellipsis">요소의 중앙 배치</h4>
+    </div>
+    orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit    orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit amet, consecte   orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit amet, consecte
+    orem ipsum dolor sit amet, consecteamet, consecte
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      . Proin et dui a metere nec eu ipsum</div>
+    <div id="middle">
+        <div id="left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.
+        </div>
+        <div id="right">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <div id="container">
+            <div id="red" class="circle"></div>
+            <div id="green" class="circle"></div>
+            <div id="blue" class="circle"></div>
+            <div id="yellow" class="circle"></div>
+          </div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+          dolor sit amet, consectetu
+        </div>
+      </div>
+      <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+        dolor sit amet, consectetur adipisc.
+      </div>
+    </div>
+</body>
+
+</html>
