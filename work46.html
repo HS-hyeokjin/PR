@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for 문</title>
+</head>
+<body>
+<hr>
+<script>
+    output = 0;
+for(var i=0; i <=100; i++){
+    output += i
+}
+document.writeln(output)
+for(var i=0; i <=100; i++){
+    if( 0 == (i%2)){
+    output += i }
+}
+document.writeln(output)
+
+for(var i=0; i <=100; i++){
+    output += i%2
+}
+document.writeln(output)
+
+for(var size=10; size<=35; size+=5) {
+document.write("<span ");
+document.write("style='font-size:" + size + "px'>");
+document.write(size + "px");
+document.write("</span>");
+}
+
+</script>
+</body>
+</html>
