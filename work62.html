@@ -4,10 +4,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('img').attr('alt', 'jqeryaa')
-            $('img').attr('src', 'www.//placehold.it/100x100');
-            $('img').attr('width', '100')
-        })
+            $('img').attr({
+                alt : 'aaa'.
+                src: function(index){
+                    var size = (index + 1) * 100;
+
+                    return 'http://placehold.it/' + size + 'x100';
+                }
+            }
+            )
     </script>
     <title>innerHTML 활용</title>
 
